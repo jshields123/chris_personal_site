@@ -1,25 +1,13 @@
 "use client";
 import styles from "./Navbar.module.css";
 import { NAVBAR_ITEMS } from "./Navbar.constants.js";
-import { useState, useEffect } from "react";
-import { Squash as Hamburger, Squash } from "hamburger-react";
+import { useState } from "react";
+import { Squash as Hamburger } from "hamburger-react";
+import { useScreenSize } from "../../providers/ScreenSizeProvider";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(true);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    handleResize(); // Initial check
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const isMobile = useScreenSize();
 
   return (
     <div>

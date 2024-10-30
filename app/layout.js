@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Roboto } from "next/font/google";
+import { ScreenSizeProvider } from "./providers/ScreenSizeProvider";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -16,7 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable}`}>{children}</body>
+      <body className={`${roboto.variable}`}>
+        <ScreenSizeProvider>{children}</ScreenSizeProvider>
+      </body>
     </html>
   );
 }
