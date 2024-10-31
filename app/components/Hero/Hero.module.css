@@ -1,0 +1,16 @@
+.hero {
+  color: var(--white-color);
+  font-size: var(--font-size-xxxl);
+  font-weight: var(--font-weight-m);
+  line-height: var(--line-height-l);
+  font-style: italic;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 40em;
+  padding: 5em 1em;
+  font-family: "Roboto";
+}
