@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   padding: 50px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navlist {
@@ -17,13 +17,14 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 .hamburger {
   min-height: 100vh;
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   padding: 70px 30px 40px 30px;
 }
 
@@ -41,4 +42,8 @@
   flex-direction: column;
   gap: 60px;
   list-style: none;
+}
+
+.hamburger_menu {
+  background-color: var(--blue-color);
 }

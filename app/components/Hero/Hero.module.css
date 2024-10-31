@@ -4,13 +4,13 @@
   font-weight: var(--font-weight-m);
   line-height: var(--line-height-l);
   font-style: italic;
-  z-index: 2;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   max-width: 40em;
-  padding: 5em 1em;
+  padding: 4em 0.5em 0em 0.5em;
   font-family: "Roboto";
 }
