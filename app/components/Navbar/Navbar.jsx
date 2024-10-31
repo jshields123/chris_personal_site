@@ -3,11 +3,9 @@ import styles from "./Navbar.module.css";
 import { NAVBAR_ITEMS } from "./Navbar.constants.js";
 import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
-import { useScreenSize } from "../../providers/ScreenSizeProvider";
 
-const Navbar = () => {
+const Navbar = (isMobile) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isMobile = useScreenSize();
 
   return (
     <div>
