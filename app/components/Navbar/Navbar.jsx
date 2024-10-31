@@ -10,7 +10,14 @@ const Navbar = (isMobile) => {
   return (
     <div>
       <div className={styles.hamburger}>
-        {isMobile && <Hamburger toggled={isMenuOpen} toggle={setIsMenuOpen} />}
+        {isMobile && (
+          <Hamburger
+            size={40}
+            color="white"
+            toggled={isMenuOpen}
+            toggle={setIsMenuOpen}
+          />
+        )}
       </div>
       {isMenuOpen && (
         <nav className={styles.navbar}>

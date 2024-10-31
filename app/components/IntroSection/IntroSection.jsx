@@ -6,7 +6,7 @@ import { ImageOverlay } from "../ImageOverlay";
 
 const IntroSection = () => {
   const isMobile = useScreenSize();
-  console.log(isMobile);
+
   return (
     <div>
       <ImageOverlay
