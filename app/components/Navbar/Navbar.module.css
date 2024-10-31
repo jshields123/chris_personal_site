@@ -1,4 +1,11 @@
-.navbar {
+.logo {
+  position: absolute;
+  left: 0;
+  padding: 50px;
+  z-index: 1;
+}
+
+.navlist {
   align-items: center;
   background-color: var(--blue-color);
   display: flex;
@@ -17,6 +24,7 @@
   right: 0;
   top: 0;
   z-index: 1;
+  padding: 70px 30px 40px 30px;
 }
 
 .text {

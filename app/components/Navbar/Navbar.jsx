@@ -3,16 +3,26 @@ import styles from "./Navbar.module.css";
 import { NAVBAR_ITEMS } from "./Navbar.constants.js";
 import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
+import Image from "next/image";
 
-const Navbar = (isMobile) => {
+const Navbar = ({ isMobile }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div>
+    <div className={styles.navbar}>
+      <div className={styles.logo}>
+        <Image
+          src={"/cvd.png"}
+          alt={"cvd-logo"}
+          height={isMobile ? 80 : 100}
+          width={isMobile ? 80 : 100}
+          priority
+        />
+      </div>
       <div className={styles.hamburger}>
         {isMobile && (
           <Hamburger
-            size={40}
+            size={60}
             color="white"
             toggled={isMenuOpen}
             toggle={setIsMenuOpen}
@@ -20,7 +30,7 @@ const Navbar = (isMobile) => {
         )}
       </div>
       {isMenuOpen && (
-        <nav className={styles.navbar}>
+        <nav className={styles.navlist}>
           <ul className={styles.ul}>
             {NAVBAR_ITEMS.map((item) => (
               <li key={item.id}>
