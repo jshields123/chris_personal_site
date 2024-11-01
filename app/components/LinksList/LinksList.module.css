@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8em;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.title {
+  color: var(--white-color);
+  padding: 0.5em;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--white-color);
+  font-family: "Roboto";
+}
