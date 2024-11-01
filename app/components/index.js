@@ -24,4 +24,11 @@ export * from "./SubHeading";
 
 export * from "./Paragraph.module.css";
 export * from "./Paragraph.jsx";
-export * from "./Paragraph";
+
+export * from "./WhoIs.module.css";
+export * from "./WhoIs.jsx";
+export * from "./WhoIs";
+
+export * from "./WhoIsSection.module.css";
+export * from "./WhoIsSection.jsx";
+export * from "./WhoIsSection";

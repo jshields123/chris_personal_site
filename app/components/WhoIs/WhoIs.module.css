@@ -1,0 +1,16 @@
+.whois {
+  color: var(--black-color);
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-l);
+  font-family: "Roboto";
+}
+
+.cvd {
+  color: var(--black-color);
+  font-size: var(--font-size-xxl);
+  font-family: "Roboto";
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-l);
+  font-style: italic;
+}

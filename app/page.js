@@ -1,5 +1,6 @@
 "use client";
 import { IntroSection } from "./components/IntroSection";
+import { WhoIsSection } from "./components/WhoIsSection";
 import { Navbar } from "./components/Navbar";
 import { useScreenSize } from "./providers/ScreenSizeProvider";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <main className={styles.main}>
         <Navbar isMobile={isMobile} />
         <IntroSection />
+        <WhoIsSection />
       </main>
       <footer className={styles.footer}></footer>
     </div>
