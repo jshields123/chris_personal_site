@@ -25,7 +25,7 @@ const IntroSection = () => {
           />
           <SubHeading
             text={
-              "Brief intro to yourself, Chris van dyke, business owner and entrepreneur."
+              "Brief intro to yourself, Chris Van Dyke, business owner and entrepreneur."
             }
           />
         </div>

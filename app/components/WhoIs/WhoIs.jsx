@@ -4,8 +4,8 @@ const WhoIs = () => {
   return (
     <>
       <h2 className={styles.whois}>
-        Who is
-        <span className={styles.cvd}> Chris Van Dijk?</span>
+        <span className={styles.cvd}> Chris Van Dijk: </span>
+        In his own words
       </h2>
     </>
   );

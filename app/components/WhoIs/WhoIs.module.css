@@ -1,16 +1,18 @@
 .whois {
   color: var(--black-color);
-  font-size: var(--font-size-xxl);
+  font-size: 40px;
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-l);
   font-family: "Roboto";
+  text-align: center;
 }
 
 .cvd {
   color: var(--black-color);
-  font-size: var(--font-size-xxl);
+  font-size: 42px;
   font-family: "Roboto";
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-l);
   font-style: italic;
+  text-align: center;
 }

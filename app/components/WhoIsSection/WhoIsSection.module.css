@@ -1,0 +1,10 @@
+.container {
+  background-color: var(--white-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 0.5em 0em 0.5em;
+  font-family: "Roboto";
+  height: 100vh;
+}

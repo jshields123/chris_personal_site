@@ -1,7 +1,7 @@
 .hero {
   color: var(--white-color);
-  font-size: var(--font-size-xxxl);
-  font-weight: var(--font-weight-m);
+  font-size: 34px;
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-l);
   font-style: italic;
   z-index: -1;
@@ -11,6 +11,6 @@
   align-items: center;
   text-align: center;
   max-width: 40em;
-  padding: 4em 0.5em 0em 0.5em;
+  padding: 3em 0.5em 0em 0.5em;
   font-family: "Roboto";
 }
