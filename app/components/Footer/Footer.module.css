@@ -1,0 +1,13 @@
+.footer {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  text-align: center;
+  padding: 1em;
+  font-family: "Roboto";
+  font-size: var(--font-size-s);
+}
+
+.link {
+  color: var(--white-color);
+  text-decoration: underline;
+}
