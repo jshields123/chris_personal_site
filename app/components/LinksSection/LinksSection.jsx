@@ -1,3 +1,4 @@
+import InstagramPosts from "../InstagramPosts/InstagramPosts";
 import { LinksList } from "../LinksList";
 import { SubHeading } from "../SubHeading";
 import styles from "./LinksSection.module.css";
@@ -21,6 +22,7 @@ const LinksSection = () => {
       />
       <div className={styles.links}>
         <LinksList />
+        <InstagramPosts userId="1234567890" accessToken="your_access_token" />
       </div>
     </div>
   );
