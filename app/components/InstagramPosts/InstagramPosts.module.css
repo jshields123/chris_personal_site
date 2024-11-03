@@ -1,0 +1,15 @@
+.instagram_posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.post {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+}
+img,
+video {
+  width: 100%;
+}

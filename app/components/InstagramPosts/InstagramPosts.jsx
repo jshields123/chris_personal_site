@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import fetchInstagramPosts from "../api/instagram";
+import styles from "./InstagramPosts.module.css";
 
 const InstagramPosts = ({ userId, accessToken }) => {
   const [posts, setPosts] = useState([]);
@@ -26,9 +27,9 @@ const InstagramPosts = ({ userId, accessToken }) => {
   if (error) return <p>Error</p>;
 
   return (
-    <div className="instagram-posts">
+    <div className={styles.instagram_posts}>
       {posts.map((post) => (
-        <div key={post.id} className="post">
+        <div key={post.id} className={styles.post}>
           <a href={post.permalink} target="_blank" rel="noopener noreferrer">
             {post.media_type === "IMAGE" && (
               <img src={post.media_url} alt={post.caption} />
@@ -46,23 +47,6 @@ const InstagramPosts = ({ userId, accessToken }) => {
           <p>{post.caption}</p>
         </div>
       ))}
-      <style jsx>{`
-        .instagram-posts {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 20px;
-        }
-        .post {
-          border: 1px solid #ccc;
-          border-radius: 8px;
-          overflow: hidden;
-          width: calc(33.333% - 20px);
-        }
-        img,
-        video {
-          width: 100%;
-        }
-      `}</style>
     </div>
   );
 };
