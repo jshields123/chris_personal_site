@@ -6,21 +6,19 @@ import Image from "next/image";
 
 const WhoIsSection = ({ isMobile }) => {
   return (
-    <>
-      <div className={styles.container}>
-        <WhoIs />
-        {!isMobile && (
-          <Image
-            src={"/images/bloke2.png"}
-            alt="bloke2"
-            height={380}
-            width={550}
-          />
-        )}
+    <div className={styles.container}>
+      <WhoIs />
+      <div className={styles.content}>
+        <Image
+          src={"/images/bloke2.png"}
+          alt="bloke2"
+          height={isMobile ? 260 : 380}
+          width={isMobile ? 350 : 550}
+        />
         <Paragraph />
-        <Button text={"Contact Today!"} isDisabled={false} onClick={() => {}} />
       </div>
-    </>
+      <Button text={"Contact Today!"} isDisabled={false} onClick={() => {}} />
+    </div>
   );
 };
 
