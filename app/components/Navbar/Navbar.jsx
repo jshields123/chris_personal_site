@@ -13,7 +13,7 @@ const Navbar = ({ isMobile }) => {
       <div className={styles.navbar}>
         <div className={styles.logo}>
           <Image
-            src={"/cvd.png"}
+            src={"/cvd2.png"}
             alt={"cvd-logo"}
             height={isMobile ? 80 : 100}
             width={isMobile ? 80 : 100}

@@ -42,3 +42,21 @@
   color: var(--white-color);
   font-family: "Roboto";
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.8em;
+
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .business,
+  .socials {
+    padding: 3em;
+  }
+}
