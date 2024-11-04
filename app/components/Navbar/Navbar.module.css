@@ -10,10 +10,6 @@
   padding: 1em;
 }
 
-.navlist {
-  display: flex;
-}
-
 .hamburger {
   min-height: 100vh;
   position: absolute;
@@ -32,11 +28,19 @@
   text-decoration: none;
 }
 
+.navlist {
+  display: flex;
+  flex-direction: column;
+}
+
 .ul {
   display: flex;
   flex-direction: column;
-
+  background-color: var(--blue-color);
   list-style: none;
+  padding: 4em;
+  gap: 6em;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -55,9 +59,5 @@
 
   .logo {
     padding: 1em;
-  }
-
-  .navlist {
-    display: flex;
   }
 }

@@ -9,28 +9,30 @@ const Navbar = ({ isMobile }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className={styles.navbar}>
-      <div className={styles.logo}>
-        <Image
-          src={"/cvd.png"}
-          alt={"cvd-logo"}
-          height={isMobile ? 80 : 100}
-          width={isMobile ? 80 : 100}
-          priority
-        />
-      </div>
-      <div className={styles.hamburger}>
-        {isMobile && (
-          <Hamburger
-            size={60}
-            color="white"
-            toggled={isMenuOpen}
-            toggle={setIsMenuOpen}
+    <>
+      <div className={styles.navbar}>
+        <div className={styles.logo}>
+          <Image
+            src={"/cvd.png"}
+            alt={"cvd-logo"}
+            height={isMobile ? 80 : 100}
+            width={isMobile ? 80 : 100}
+            priority
           />
-        )}
-      </div>
-      {isMenuOpen && (
-        <div className={styles.hamburger_menu}>
+        </div>
+
+        <div className={styles.hamburger}>
+          {isMobile && (
+            <Hamburger
+              size={60}
+              color="white"
+              toggled={isMenuOpen}
+              toggle={setIsMenuOpen}
+            />
+          )}
+        </div>
+
+        {!isMobile && (
           <nav className={styles.navlist}>
             <ul className={styles.ul}>
               {NAVBAR_ITEMS.map((item) => (
@@ -42,9 +44,9 @@ const Navbar = ({ isMobile }) => {
               ))}
             </ul>
           </nav>
-        </div>
-      )}
-      {!isMobile && (
+        )}
+      </div>
+      {isMenuOpen && (
         <nav className={styles.navlist}>
           <ul className={styles.ul}>
             {NAVBAR_ITEMS.map((item) => (
@@ -57,7 +59,7 @@ const Navbar = ({ isMobile }) => {
           </ul>
         </nav>
       )}
-    </div>
+    </>
   );
 };
 

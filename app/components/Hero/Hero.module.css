@@ -11,6 +11,8 @@
   align-items: center;
   text-align: center;
   max-width: 40em;
-  padding: 3em 0.5em 0em 0.5em;
+
+  padding: 0.5em;
+
   font-family: "Roboto";
 }

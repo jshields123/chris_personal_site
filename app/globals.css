@@ -55,3 +55,12 @@
   --padding-xxl: 2rem;
   --padding-xxxl: 5rem;
 }
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
