@@ -14,29 +14,27 @@ const IntroSection = () => {
 
   return (
     <div className={styles.container}>
-      {isMobile ? (
-        <div className={styles.content}>
-          <Hero />
-          <Image
-            src={"/images/bloke.png"}
-            alt="bloke"
-            height={380}
-            width={400}
-          />
-          <SubHeading
-            text={
-              "Brief intro to yourself, Chris Van Dyke, business owner and entrepreneur."
-            }
-          />
-        </div>
-      ) : (
-        <ImageOverlay
-          shouldHavePriority={true}
-          imageSrc="/images/skyline.jpg"
-          alt="city skyline"
-          children={<Hero />}
-        ></ImageOverlay>
-      )}
+      <ImageOverlay
+        shouldHavePriority={true}
+        imageSrc="/images/skyline.jpg"
+        alt="city skyline"
+        children={
+          <div className={styles.content}>
+            <Hero />
+            <Image
+              src={"/images/bloke.png"}
+              alt="bloke"
+              height={380}
+              width={400}
+            />
+            <SubHeading
+              text={
+                "Brief intro to yourself, Chris Van Dyke, business owner and entrepreneur."
+              }
+            />
+          </div>
+        }
+      ></ImageOverlay>
     </div>
   );
 };

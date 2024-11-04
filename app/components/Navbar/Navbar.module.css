@@ -1,24 +1,19 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
 .logo {
-  position: absolute;
-  left: 0;
-  padding: 50px;
-  z-index: 2;
+  padding: 1em;
 }
 
 .navlist {
-  align-items: center;
-  background-color: var(--blue-color);
   display: flex;
-  flex-direction: column;
-  gap: 40px;
-  height: 100vh;
-  justify-content: center;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
 }
+
 .hamburger {
   min-height: 100vh;
   position: absolute;
@@ -40,10 +35,29 @@
 .ul {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+
   list-style: none;
 }
 
-.hamburger_menu {
-  background-color: var(--blue-color);
+@media screen and (min-width: 768px) {
+  .ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em;
+  }
+
+  .logo {
+    padding: 1em;
+  }
+
+  .navlist {
+    display: flex;
+  }
 }

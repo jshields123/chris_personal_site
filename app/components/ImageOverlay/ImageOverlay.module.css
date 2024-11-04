@@ -3,11 +3,11 @@
   min-width: 100vw;
   overflow: hidden;
   position: relative;
+  width: 100vw;
 }
 
 .overlay {
   align-items: center;
-  background-color: var(--blue-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,19 +15,17 @@
   min-height: 100vh;
   position: absolute;
   top: 0;
-  z-index: 1;
-  opacity: 0.7;
-}
-
-@media (min-width: 768px) {
-  .container,
-  .overlay,
-  .intro__image {
-    width: 100vw;
-  }
+  z-index: 0;
+  width: 100vw;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 89, 231, 1) 0%,
+    rgba(0, 89, 231, 0.7) 100%
+  );
 }
 
 .intro__image {
   object-fit: "cover";
   filter: grayscale(100%);
+  width: 100vw;
 }

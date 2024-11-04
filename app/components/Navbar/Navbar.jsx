@@ -44,10 +44,19 @@ const Navbar = ({ isMobile }) => {
           </nav>
         </div>
       )}
-      <nav className={styles.desktop_nav}>
-        {!isMobile &&
-          NAVBAR_ITEMS.map((item) => <li key={item.id}>{item.text}</li>)}
-      </nav>
+      {!isMobile && (
+        <nav className={styles.navlist}>
+          <ul className={styles.ul}>
+            {NAVBAR_ITEMS.map((item) => (
+              <li key={item.id}>
+                <a className={styles.text} href={item.linkHref}>
+                  {item.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )}
     </div>
   );
 };

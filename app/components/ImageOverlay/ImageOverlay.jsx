@@ -16,8 +16,7 @@ const ImageOverlay = ({
         alt={alt}
         className={`${styles.intro__image}`}
         priority={shouldHavePriority ? true : undefined}
-        height={700}
-        width={768}
+        fill
       />
       <div className={styles.overlay}>{children}</div>
     </div>
