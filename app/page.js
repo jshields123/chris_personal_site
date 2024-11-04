@@ -16,7 +16,7 @@ export default function Home() {
       <main className={styles.main}>
         <Navbar isMobile={isMobile} />
         <IntroSection />
-        <WhoIsSection />
+        <WhoIsSection isMobile={isMobile} />
         <LinksSection />
       </main>
       <Footer />
