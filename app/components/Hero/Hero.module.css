@@ -10,3 +10,9 @@
   padding: var(--padding-s);
   text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    font-size: var(--font-size-biggy);
+  }
+}

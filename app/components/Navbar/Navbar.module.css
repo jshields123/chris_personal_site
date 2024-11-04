@@ -6,10 +6,6 @@
   padding: var(--padding-xl);
 }
 
-.logo {
-  padding: var(--padding-m);
-}
-
 .hamburger {
   padding: var(--padding-xxl);
 }

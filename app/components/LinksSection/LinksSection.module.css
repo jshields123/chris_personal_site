@@ -6,9 +6,16 @@
 }
 
 .logo {
-  height: 6.25em;
   padding: 3em;
-  width: 6.25em;
+  width: 200px;
+  height: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 326px;
+    height: 90px;
+  }
 }
 
 .subheading {

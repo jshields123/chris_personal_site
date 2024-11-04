@@ -1,0 +1,8 @@
+.navbar {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-xl);
+  height: 179px;
+}

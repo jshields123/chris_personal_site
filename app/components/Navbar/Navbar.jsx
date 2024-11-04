@@ -1,23 +1,34 @@
 "use client";
 import styles from "./Navbar.module.css";
 import { NAVBAR_ITEMS } from "./Navbar.constants.js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import Image from "next/image";
+import { NavbarSkeleton } from "../NavbarSkeleton/NavbarSkeleton";
 
 const Navbar = ({ isMobile }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isInitialized, setIsInitialized] = useState(false);
+
+  useEffect(() => {
+    setIsInitialized(true);
+  }, [isMobile]);
+
+  if (!isInitialized) {
+    return <NavbarSkeleton />; // Don't render anything until isMobile is available
+  }
 
   return (
     <>
       <div className={styles.navbar}>
         <div className={styles.logo}>
           <Image
-            src={"/cvd2.png"}
+            src={"/chris-rect-white.png"}
             alt={"cvd-logo"}
-            height={isMobile ? 80 : 100}
-            width={isMobile ? 80 : 100}
+            height={isMobile ? 56 : 90}
+            width={isMobile ? 200 : 326}
             priority
+            className={styles.logo}
           />
         </div>
 

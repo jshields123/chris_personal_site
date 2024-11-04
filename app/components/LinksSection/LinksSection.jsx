@@ -8,10 +8,10 @@ const LinksSection = () => {
     <div className={styles.container}>
       <Image
         className={styles.logo}
-        src="/cvd2.png"
+        src="/chris-rect-white.png"
         alt="cvd-logo"
-        height={100}
-        width={100}
+        height={90}
+        width={326}
       />
       <SubHeading
         className={styles.subheading}
