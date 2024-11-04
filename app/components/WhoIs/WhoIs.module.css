@@ -1,20 +1,17 @@
 .whois {
   color: var(--black-color);
-  font-size: 38px;
+  font-size: var(--font-size-xxxxl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-l);
-  font-family: "Roboto";
+  padding: var(--padding-xs);
   text-align: center;
-  padding: 0.3em;
 }
 
 .cvd {
   color: var(--black-color);
-  font-size: 42px;
-  font-family: "Roboto";
+  font-size: var(--font-size-biggy);
+  font-style: italic;
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-l);
-  font-style: italic;
-  text-align: center;
-  padding: 0.3em;
+  padding: var(--padding-xs);
 }

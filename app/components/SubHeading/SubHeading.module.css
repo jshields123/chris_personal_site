@@ -2,9 +2,7 @@
   color: var(--white-color);
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-m);
-
   font-style: italic;
-  padding: 0.5em;
-  font-family: "Roboto";
+  padding: var(--padding-xs);
   text-align: center;
 }

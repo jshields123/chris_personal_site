@@ -1,50 +1,38 @@
 .navbar {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  padding: 1.5em;
+  padding: var(--padding-xl);
 }
 
 .logo {
-  padding: 1em;
+  padding: var(--padding-m);
 }
 
 .hamburger {
-  right: 0;
-  top: 0;
-  z-index: 2;
-  padding: 2em;
+  padding: var(--padding-xxl);
 }
 
 .text {
-  color: white;
-  font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 20px;
+  color: var(--white-color);
+  font-size: var(--font-size-xl);
   text-decoration: none;
 }
 
-.navlist {
-  display: flex;
-  flex-direction: column;
-}
-
 .ul {
+  align-items: center;
+  background-color: var(--blue-color);
   display: flex;
   flex-direction: column;
-  background-color: var(--blue-color);
+  gap: var(--padding-xxxl);
   list-style: none;
-  padding: 4em;
-  gap: 6em;
-  align-items: center;
+  padding: var(--padding-xxl);
 }
 
 @media screen and (min-width: 768px) {
   .ul {
     flex-direction: row;
-    align-items: center;
-    gap: 3em;
+    gap: var(--padding-xxl);
   }
 }

@@ -1,7 +1,7 @@
 .paragraph {
-  padding: 1em;
   display: flex;
   flex-direction: column;
+  font-size: var(--font-size-xxl);
+  padding: var(--padding-m);
   text-align: center;
-  font-size: 30px;
 }

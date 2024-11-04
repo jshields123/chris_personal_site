@@ -13,7 +13,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: "Chris Van Dijk",
-  description: "Personal website for Chris Van Dijk",
+  description: "Personal website of Chris Van Dijk",
 };
 
 export default function RootLayout({ children }) {

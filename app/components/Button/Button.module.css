@@ -1,11 +1,9 @@
 .button {
-  background-color: rgb(253, 130, 7);
-  color: var(--white-color);
+  background-color: var(--orange-color);
   border: none;
-  padding: 1em 4em;
-
+  color: var(--white-color);
+  cursor: pointer;
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-bold);
-  font-family: "Roboto";
-  cursor: pointer;
+  padding: 1em 4em;
 }

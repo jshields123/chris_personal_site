@@ -1,18 +1,12 @@
 .hero {
   color: var(--white-color);
-  font-size: 34px;
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-l);
-  font-style: italic;
-  z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-size: var(--font-size-xxxxl);
+  font-style: italic;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-l);
+  max-width: var(--tab-width);
+  padding: var(--padding-s);
   text-align: center;
-  max-width: 40em;
-
-  padding: 0.5em;
-
-  font-family: "Roboto";
 }
