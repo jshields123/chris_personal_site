@@ -2,7 +2,7 @@
   background-color: var(--blue-color);
   color: var(--white-color);
   text-align: center;
-  padding: 1em;
+  padding: 2em 1em;
   font-family: "Roboto";
   font-size: var(--font-size-s);
 }

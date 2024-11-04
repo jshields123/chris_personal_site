@@ -11,12 +11,10 @@
 }
 
 .hamburger {
-  min-height: 100vh;
-  position: absolute;
   right: 0;
   top: 0;
   z-index: 2;
-  padding: 70px 30px 40px 30px;
+  padding: 2em;
 }
 
 .text {
@@ -48,16 +46,5 @@
     flex-direction: row;
     align-items: center;
     gap: 3em;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5em;
-  }
-
-  .logo {
-    padding: 1em;
   }
 }
