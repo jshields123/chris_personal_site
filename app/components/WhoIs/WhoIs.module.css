@@ -1,9 +1,15 @@
 .whois {
   color: var(--black-color);
-  font-size: var(--font-size-xxxxl);
+  font-size: var(--font-size-xxxxxl);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-l);
   padding: var(--padding-xs);
   text-align: center;
   font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .whois {
+    font-size: var(--font-size-huge);
+  }
 }

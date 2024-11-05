@@ -24,7 +24,10 @@
   --font-size-xxl: 1.8rem;
   --font-size-xxxl: 2rem;
   --font-size-xxxxl: 2.2rem;
-  --font-size-biggy: 3rem;
+  --font-size-xxxxxl: 2.8rem;
+  --font-size-biggy: 3.125rem;
+  --font-size-huge: 3.75rem;
+  --font-size-gigantic: 4.375rem;
 
   /* Font Weights */
   --font-weight-regular: 400;

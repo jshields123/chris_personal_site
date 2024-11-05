@@ -2,13 +2,14 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: var(--padding-xl);
+  justify-content: space-evenly;
+  padding: var(--padding-s);
 }
 
 .logo {
   height: 56px;
   width: 200px;
+  padding-left: var(--padding-s);
 }
 
 .hamburger {
@@ -38,7 +39,7 @@
 @media screen and (min-width: 768px) {
   .ul {
     flex-direction: row;
-    gap: var(--padding-xxl);
+    gap: var(--padding-xl);
   }
 
   .hamburger {
@@ -52,5 +53,9 @@
   .logo {
     height: 90px;
     width: 326px;
+  }
+
+  .navbar {
+    justify-content: space-between;
   }
 }
