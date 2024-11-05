@@ -8,6 +8,7 @@ import { useScreenSize } from "./providers/ScreenSizeProvider";
 
 import styles from "./page.module.css";
 import { Footer } from "./components/Footer";
+import { FOOTER_CONTENT } from "./Footer.constants";
 
 export default function Home() {
   const isMobile = useScreenSize();
@@ -19,7 +20,7 @@ export default function Home() {
         <WhoIsSection isMobile={isMobile} />
         <LinksSection />
       </main>
-      <Footer />
+      <Footer link={FOOTER_CONTENT.linkHref} text={FOOTER_CONTENT.text} />
     </div>
   );
 }

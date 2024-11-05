@@ -6,6 +6,11 @@
   padding: var(--padding-xl);
 }
 
+.logo {
+  height: 56px;
+  width: 200px;
+}
+
 .hamburger {
   padding: var(--padding-xxl);
 }
@@ -26,9 +31,26 @@
   padding: var(--padding-xxl);
 }
 
+.navlist {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .ul {
     flex-direction: row;
     gap: var(--padding-xxl);
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navlist {
+    display: flex;
+  }
+
+  .logo {
+    height: 90px;
+    width: 326px;
   }
 }

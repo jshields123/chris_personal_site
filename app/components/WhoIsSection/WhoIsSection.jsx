@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const WhoIsSection = ({ isMobile }) => {
   return (
-    <div className={styles.container}>
+    <div id="bio" className={styles.container}>
       <WhoIs />
       <div className={styles.content}>
         <Image

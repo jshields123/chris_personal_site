@@ -13,6 +13,7 @@ export * from "./Logo.jsx";
 
 export * from "./Footer.module.css";
 export * from "./Footer.jsx";
+export * from "./Footer.constants.js";
 
 export * from "./Button.module.css";
 export * from "./Button.jsx";
