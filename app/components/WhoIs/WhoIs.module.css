@@ -5,13 +5,5 @@
   line-height: var(--line-height-l);
   padding: var(--padding-xs);
   text-align: center;
-}
-
-.cvd {
-  color: var(--black-color);
-  font-size: var(--font-size-biggy);
   font-style: italic;
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-l);
-  padding: var(--padding-xs);
 }

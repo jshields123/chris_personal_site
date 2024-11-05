@@ -6,7 +6,8 @@
   --orange-color: rgb(253, 130, 7);
 
   /* Font */
-  font-family: "Bebas Neue", Helvetica, sans-serif;
+  --font-titles: "Bebas Neue", Helvetica, sans-serif;
+  --font-normal: "Roboto", Helvetica, sans-serif;
 
   /* Screen sizes */
   --mob-width: 22em;
@@ -68,5 +69,10 @@ body {
 }
 
 * {
-  font-family: "Bebas Neue", Helvetica, sans-serif;
+  font-family: var(--font-normal);
+}
+
+h1,
+h2 {
+  font-family: var(--font-titles);
 }

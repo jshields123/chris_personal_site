@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Bebas_Neue } from "next/font/google";
+import { Bebas_Neue, Roboto } from "next/font/google";
 import styles from "./page.module.css";
 
 export const metadata = {
@@ -8,7 +8,14 @@ export const metadata = {
 };
 
 const bebasNeue = Bebas_Neue({
-  weight: "400",
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
+const roboto = Roboto({
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",
 });
