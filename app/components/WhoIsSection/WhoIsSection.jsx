@@ -5,6 +5,12 @@ import { Button } from "../Button";
 import Image from "next/image";
 
 const WhoIsSection = () => {
+  const onClick = () => {
+    (window.location.href = "mailto:chris@cvdglass.com"),
+      "_blank",
+      "noopener noreferrer";
+  };
+
   return (
     <div id="bio" className={styles.container}>
       <WhoIs />
@@ -18,7 +24,7 @@ const WhoIsSection = () => {
         />
         <Paragraph />
       </div>
-      <Button text={"Contact Today!"} isDisabled={false} onClick={() => {}} />
+      <Button text={"Contact Today!"} isDisabled={false} onClick={onClick} />
     </div>
   );
 };
