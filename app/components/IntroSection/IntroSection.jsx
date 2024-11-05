@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 
-import { useScreenSize } from "../../providers/ScreenSizeProvider";
 import { ImageOverlay } from "../ImageOverlay";
 import { Hero } from "../Hero";
 import Image from "next/image";
@@ -10,8 +9,6 @@ import { SubHeading } from "../SubHeading";
 import styles from "./IntroSection.module.css";
 
 const IntroSection = () => {
-  const isMobile = useScreenSize();
-
   return (
     <div className={styles.container}>
       <ImageOverlay

@@ -15,11 +15,21 @@
   justify-content: space-evenly;
 }
 
+.image {
+  width: 350px;
+  height: 260px;
+}
+
 @media screen and (min-width: 768px) {
   .content {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: var(--padding-m);
+  }
+
+  .image {
+    width: 550px;
+    height: 380px;
   }
 }

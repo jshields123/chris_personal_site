@@ -2,13 +2,7 @@ import styles from "./ImageOverlay.module.css";
 
 import Image from "next/image";
 
-const ImageOverlay = ({
-  children,
-  imageSrc,
-  alt,
-  shouldHavePriority,
-  isMobile,
-}) => {
+const ImageOverlay = ({ children, imageSrc, alt, shouldHavePriority }) => {
   return (
     <div className={styles.container}>
       <Image

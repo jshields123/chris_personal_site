@@ -4,7 +4,7 @@ import { Paragraph } from "../Paragraph";
 import { Button } from "../Button";
 import Image from "next/image";
 
-const WhoIsSection = ({ isMobile }) => {
+const WhoIsSection = () => {
   return (
     <div id="bio" className={styles.container}>
       <WhoIs />
@@ -12,8 +12,9 @@ const WhoIsSection = ({ isMobile }) => {
         <Image
           src={"/images/bloke2.png"}
           alt="bloke2"
-          height={isMobile ? 260 : 380}
-          width={isMobile ? 350 : 550}
+          height={260}
+          width={350}
+          className={styles.image}
         />
         <Paragraph />
       </div>
