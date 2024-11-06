@@ -4,6 +4,8 @@ import { NAVBAR_ITEMS } from "./Navbar.constants.js";
 import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import Image from "next/image";
+import { MobileNavItems } from "../MobileNavItems";
+import { NavItem } from "../NavItem";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,28 +36,12 @@ const Navbar = () => {
         <nav className={styles.navlist}>
           <ul className={styles.ul}>
             {NAVBAR_ITEMS.map((item) => (
-              <li key={item.id}>
-                <a className={styles.text} href={item.linkHref}>
-                  {item.text}
-                </a>
-              </li>
+              <NavItem key={item.id} item={item} />
             ))}
           </ul>
         </nav>
       </div>
-      {isMenuOpen && (
-        <nav className={styles.menu_open}>
-          <ul className={styles.ul}>
-            {NAVBAR_ITEMS.map((item) => (
-              <li key={item.id}>
-                <a className={styles.text} href={item.linkHref}>
-                  {item.text}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+      {isMenuOpen && <MobileNavItems />}
     </>
   );
 };
