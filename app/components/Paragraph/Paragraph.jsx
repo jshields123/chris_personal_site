@@ -1,12 +1,8 @@
 import styles from "./Paragraph.module.css";
+import { PARAGRAPH_CONTENT } from "./Paragraph.constants";
 
-const Paragraph = () => {
-  return (
-    <p className={styles.paragraph}>
-      Bio - about Chris, business owner, serial entrepreneur, expert in glass
-      and windows installations from Sydney Australia
-    </p>
-  );
+const Paragraph = ({ text }) => {
+  return <p className={styles.paragraph}>{text}</p>;
 };
 
 export { Paragraph };

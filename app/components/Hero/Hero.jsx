@@ -1,11 +1,9 @@
 import styles from "./Hero.module.css";
 
-const Hero = () => {
+const Hero = ({ text }) => {
   return (
     <>
-      <h1 className={styles.hero}>
-        INTRO MESSAGE TO PEOPLE ARRIVING TO THE SITE!
-      </h1>
+      <h1 className={styles.hero}>{text}</h1>
     </>
   );
 };

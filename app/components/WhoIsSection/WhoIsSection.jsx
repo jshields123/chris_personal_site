@@ -1,6 +1,8 @@
 import styles from "./WhoIsSection.module.css";
 import { WhoIs } from "../WhoIs";
+import { WHOIS_CONTENT } from "../WhoIs/WhoIs.constants";
 import { Paragraph } from "../Paragraph";
+import { PARAGRAPH_CONTENT } from "../Paragraph/Paragraph.constants";
 import { Button } from "../Button";
 import Image from "next/image";
 
@@ -13,7 +15,7 @@ const WhoIsSection = () => {
 
   return (
     <div id="bio" className={styles.container}>
-      <WhoIs />
+      <WhoIs text={WHOIS_CONTENT} />
       <div className={styles.content}>
         <Image
           src={"/images/bloke2.png"}
@@ -22,7 +24,7 @@ const WhoIsSection = () => {
           width={350}
           className={styles.image}
         />
-        <Paragraph />
+        <Paragraph text={PARAGRAPH_CONTENT} />
       </div>
       <Button text={"Contact Today!"} isDisabled={false} onClick={onClick} />
     </div>

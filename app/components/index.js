@@ -1,5 +1,7 @@
 export * from "./Hero.module.css";
 export * from "./Hero.jsx";
+export * from "./Hero";
+
 export * from "./Navbar.module.css";
 export * from "./Navbar.jsx";
 export * from "./Navbar.constants.js";

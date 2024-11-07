@@ -2,7 +2,7 @@
   color: var(--white-color);
   display: flex;
   flex-direction: column;
-  font-size: var(--font-size-biggy);
+  font-size: 74px;
   font-style: italic;
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-l);
@@ -13,6 +13,6 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    font-size: var(--font-size-gigantic);
+    font-size: 100px;
   }
 }
