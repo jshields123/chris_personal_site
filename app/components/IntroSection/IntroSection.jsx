@@ -6,10 +6,11 @@ import { Hero } from "../Hero";
 import { HERO_CONTENT } from "../Hero/Hero.constants";
 
 import Image from "next/image";
-import { SubHeading } from "../SubHeading";
-import { SUB_HEADING_CONTENT } from "../SubHeading/SubHeading.constants";
+
+import { THIRD_HEADING_TEXT } from "../ThirdHeading/ThirdHeading.constants";
 
 import styles from "./IntroSection.module.css";
+import { ThirdHeading } from "../ThirdHeading/ThirdHeading";
 
 const IntroSection = () => {
   return (
@@ -27,7 +28,7 @@ const IntroSection = () => {
               height={380}
               width={400}
             />
-            <SubHeading text={SUB_HEADING_CONTENT} />
+            <ThirdHeading text={THIRD_HEADING_TEXT} />
           </div>
         }
       ></ImageOverlay>

@@ -1,7 +1,7 @@
 .paragraph {
   display: flex;
   flex-direction: column;
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-l);
   padding: var(--padding-m);
-  text-align: center;
+  /* text-align: center; */
 }

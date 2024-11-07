@@ -1,5 +1,5 @@
 import { LinksList } from "../LinksList";
-import { SubHeading } from "../SubHeading";
+import { ThirdHeading } from "../ThirdHeading";
 import styles from "./LinksSection.module.css";
 import Image from "next/image";
 
@@ -13,11 +13,9 @@ const LinksSection = () => {
         height={90}
         width={326}
       />
-      <SubHeading
+      <ThirdHeading
         className={styles.subheading}
-        text={
-          "Brief intro to yourself, Chris van dyke, business owner and entrepreneur. "
-        }
+        text={"Director of CVD Glass | Founder & CEO of CVD Windows and Doors"}
       />
       <div className={styles.links}>
         <LinksList />

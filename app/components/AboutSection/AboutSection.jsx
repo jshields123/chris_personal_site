@@ -1,13 +1,14 @@
-import styles from "./WhoIsSection.module.css";
-import { WhoIs } from "../WhoIs";
-import { WHOIS_CONTENT } from "../WhoIs/WhoIs.constants";
-import { Paragraph } from "../Paragraph";
-import { PARAGRAPH_CONTENT } from "../Paragraph/Paragraph.constants";
-import { Button } from "../Button";
+"use client";
+import styles from "./AboutSection.module.css";
 import Image from "next/image";
-import Link from "next/link";
+import { WhoIs } from "../WhoIs";
+import { Paragraph } from "../Paragraph";
+import { Button } from "../Button";
 
-const WhoIsSection = () => {
+import { WHOIS_CONTENT } from "../WhoIs/WhoIs.constants";
+import { PARAGRAPH_CONTENT_EXTENDED } from "../Paragraph/Paragraph.constants";
+
+const AboutSection = () => {
   const onClick = () => {
     (window.location.href = "mailto:chris@cvdglass.com"),
       "_blank",
@@ -25,13 +26,11 @@ const WhoIsSection = () => {
           width={350}
           className={styles.image}
         />
-        <Paragraph text={PARAGRAPH_CONTENT} />
+        <Paragraph text={PARAGRAPH_CONTENT_EXTENDED} />
       </div>
-      <Link href="/about">
-        <Button text={"Read More"} isDisabled={false} />
-      </Link>
+      <Button text={"Contact Today!"} isDisabled={false} onClick={onClick} />
     </div>
   );
 };
 
-export { WhoIsSection };
+export { AboutSection };

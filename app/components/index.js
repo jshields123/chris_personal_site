@@ -25,6 +25,10 @@ export * from "./SubHeading.module.css";
 export * from "./SubHeading.jsx";
 export * from "./SubHeading";
 
+export * from "./ThirdHeading.module.css";
+export * from "./ThirdHeading.jsx";
+export * from "./ThirdHeading.constants.js";
+
 export * from "./Paragraph.module.css";
 export * from "./Paragraph.jsx";
 
