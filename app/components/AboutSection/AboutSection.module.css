@@ -1,0 +1,38 @@
+.container {
+  background-color: var(--white-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: var(--padding-m);
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    height: 100vh;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--padding-m);
+  }
+
+  .image {
+    display: block;
+    width: 550px;
+    height: 380px;
+  }
+}
