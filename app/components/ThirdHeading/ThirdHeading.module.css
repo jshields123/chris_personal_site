@@ -1,7 +1,7 @@
 .third_heading {
   color: var(--white-color);
   font-size: var(--font-size-xxl);
-  font-weight: var(--font-weight-m);
+  font-weight: var(--font-weight-medium);
   padding: var(--padding-s);
   text-align: center;
 }

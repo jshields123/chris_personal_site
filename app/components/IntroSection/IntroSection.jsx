@@ -21,13 +21,16 @@ const IntroSection = () => {
         alt="city skyline"
         children={
           <div className={styles.content}>
-            <Hero text={HERO_CONTENT} />
-            <Image
-              src={"/images/bloke.png"}
-              alt="bloke"
-              height={380}
-              width={400}
-            />
+            <div className={styles.hero_and_image_combo}>
+              <Hero text={HERO_CONTENT} />
+              <Image
+                src={"/images/chris_1.png"}
+                alt="chris_2"
+                height={623}
+                width={554}
+                className={styles.hero_image}
+              />
+            </div>
             <ThirdHeading text={THIRD_HEADING_TEXT} />
           </div>
         }

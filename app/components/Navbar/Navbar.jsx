@@ -6,6 +6,7 @@ import { Squash as Hamburger } from "hamburger-react";
 import Image from "next/image";
 import { MobileNavItems } from "../MobileNavItems";
 import { NavItem } from "../NavItem";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,14 +15,16 @@ const Navbar = () => {
     <>
       <div className={styles.navbar}>
         <div className={styles.logo}>
-          <Image
-            src={"/chris-rect-white.png"}
-            alt={"cvd-logo"}
-            height={90}
-            width={326}
-            priority
-            className={styles.logo}
-          />
+          <Link href="/">
+            <Image
+              src={"/chris-rect-white.png"}
+              alt={"cvd-logo"}
+              height={90}
+              width={326}
+              priority
+              className={styles.logo}
+            />
+          </Link>
         </div>
 
         <div className={styles.hamburger}>

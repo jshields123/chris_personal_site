@@ -19,8 +19,8 @@ const WhoIsSection = () => {
       <WhoIs text={WHOIS_CONTENT} />
       <div className={styles.content}>
         <Image
-          src={"/images/bloke2.png"}
-          alt="bloke2"
+          src={"/images/chris_2.png"}
+          alt="chris_2"
           height={260}
           width={350}
           className={styles.image}
