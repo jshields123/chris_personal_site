@@ -3,6 +3,7 @@ import { Bebas_Neue, Roboto } from "next/font/google";
 import styles from "./page.module.css";
 import { Footer } from "./components/Footer";
 import { FOOTER_CONTENT } from "./components/Footer/Footer.constants";
+import { LinksSection } from "./components/LinksSection";
 
 export const metadata = {
   title: "Chris Van Dijk",
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
     <html className={styles.html} lang="en">
       <body className={bebasNeue.className}>
         {children}
-
+        <LinksSection />
         <Footer link={FOOTER_CONTENT.linkHref} text={FOOTER_CONTENT.text} />
       </body>
     </html>

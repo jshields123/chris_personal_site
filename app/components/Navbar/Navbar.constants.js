@@ -1,14 +1,14 @@
 export const NAVBAR_ITEMS = [
   { text: "About", linkHref: "/about", id: "about" },
   {
-    text: "Email",
-    linkHref: "mailto:chris@cvdglass.com",
-    id: "email",
-  },
-  {
     text: "Instagram",
     linkHref: "https://www.instagram.com/chrisvandijk_official/",
     id: "instagram",
+  },
+  {
+    text: "Podcast",
+    linkHref: "https://www.youtube.com/@ChrisVanDijkOfficial/videos",
+    id: "podcast",
   },
   {
     text: "X",
@@ -25,5 +25,10 @@ export const NAVBAR_ITEMS = [
     text: "Facebook",
     linkHref: "https://www.facebook.com/chris.vandijk.50951/",
     id: "facebook",
+  },
+  {
+    text: "Email",
+    linkHref: "mailto:chris@cvdglass.com",
+    id: "email",
   },
 ];

@@ -33,4 +33,9 @@ export const SOCIAL_LINKS = [
     linkHref: "https://x.com/cvdglass",
     name: "X",
   },
+  {
+    id: 5,
+    linkHref: "https://www.youtube.com/@ChrisVanDijkOfficial/videos",
+    name: "Podcast",
+  },
 ];
