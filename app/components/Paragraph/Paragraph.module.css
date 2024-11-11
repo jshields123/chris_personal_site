@@ -1,7 +1,13 @@
 .paragraph {
   display: flex;
   flex-direction: column;
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-m);
   padding: var(--padding-m);
-  /* text-align: center; */
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph {
+    font-size: var(--font-size-xl);
+    flex-direction: row;
+  }
 }

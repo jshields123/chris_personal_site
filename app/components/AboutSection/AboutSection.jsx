@@ -6,7 +6,12 @@ import { Paragraph } from "../Paragraph";
 import { Button } from "../Button";
 
 import { WHOIS_CONTENT } from "../WhoIs/WhoIs.constants";
-import { PARAGRAPH_CONTENT_EXTENDED } from "../Paragraph/Paragraph.constants";
+import {
+  PARAGRAPH_CONTENT,
+  PARAGRAPH_CONTENT_EXTENDED_PT1,
+  PARAGRAPH_CONTENT_EXTENDED_PT2,
+  PARAGRAPH_CONTENT_EXTENDED_PT3,
+} from "../Paragraph/Paragraph.constants";
 
 const AboutSection = () => {
   const onClick = () => {
@@ -26,7 +31,13 @@ const AboutSection = () => {
           width={350}
           className={styles.image}
         />
-        <Paragraph text={PARAGRAPH_CONTENT_EXTENDED} />
+        <Paragraph text={PARAGRAPH_CONTENT} />
+        <br />
+        <Paragraph text={PARAGRAPH_CONTENT_EXTENDED_PT1} />
+        <br />
+        <Paragraph text={PARAGRAPH_CONTENT_EXTENDED_PT2} />
+        <br />
+        <Paragraph text={PARAGRAPH_CONTENT_EXTENDED_PT3} />
       </div>
       <Button text={"Contact Today!"} isDisabled={false} onClick={onClick} />
     </div>

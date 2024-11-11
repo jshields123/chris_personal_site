@@ -1,1 +1,1 @@
-export const WHOIS_CONTENT = "Who is Chris Van Dyke?";
+export const WHOIS_CONTENT = "Who is Chris Van Dijk?";

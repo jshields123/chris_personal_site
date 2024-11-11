@@ -8,6 +8,10 @@
   padding: var(--padding-m);
 }
 
+.paragraph {
+  font-size: var(--font-size-s);
+}
+
 .bio {
   display: flex;
   flex-direction: column;
@@ -20,12 +24,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    height: 100vh;
-  }
   .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    align-content: center;
     align-items: center;
     padding: var(--padding-m);
   }
@@ -33,6 +36,6 @@
   .image {
     display: block;
     width: 550px;
-    height: 380px;
+    height: 480px;
   }
 }

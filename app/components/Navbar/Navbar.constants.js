@@ -1,5 +1,5 @@
 export const NAVBAR_ITEMS = [
-  { text: "Bio", linkHref: "#bio", id: "bio" },
+  { text: "About", linkHref: "/about", id: "about" },
   {
     text: "Email",
     linkHref: "mailto:chris@cvdglass.com",
