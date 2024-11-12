@@ -14,12 +14,12 @@ import { ThirdHeading } from "../ThirdHeading/ThirdHeading";
 
 const IntroSection = () => {
   return (
-    <div className={styles.container}>
-      <ImageOverlay
-        shouldHavePriority={true}
-        imageSrc="/images/skyline.jpg"
-        alt="city skyline"
-        children={
+    <ImageOverlay
+      shouldHavePriority={true}
+      imageSrc="/images/skyline.jpg"
+      alt="city skyline"
+      children={
+        <div className={styles.container}>
           <div className={styles.content}>
             <div className={styles.hero_and_image_combo}>
               <Hero text={HERO_CONTENT} />
@@ -33,9 +33,9 @@ const IntroSection = () => {
             </div>
             <ThirdHeading text={THIRD_HEADING_TEXT} />
           </div>
-        }
-      ></ImageOverlay>
-    </div>
+        </div>
+      }
+    ></ImageOverlay>
   );
 };
 

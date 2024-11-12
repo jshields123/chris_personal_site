@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .content {
@@ -10,8 +10,8 @@
 }
 
 .hero_image {
-  height: 500px;
-  width: 350px;
+  height: 320px;
+  width: 300px;
 }
 
 .hero_and_image_combo {

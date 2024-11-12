@@ -6,9 +6,9 @@ export const NAVBAR_ITEMS = [
     id: "instagram",
   },
   {
-    text: "Podcast",
+    text: "Youtube",
     linkHref: "https://www.youtube.com/@ChrisVanDijkOfficial/videos",
-    id: "podcast",
+    id: "youtube",
   },
   {
     text: "X",

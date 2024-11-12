@@ -1,0 +1,10 @@
+.podcast {
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .podcast {
+    width: 500px;
+    height: 352px;
+  }
+}

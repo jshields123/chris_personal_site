@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  padding: var(--padding-m);
 }
 
 .content {
@@ -7,4 +7,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  color: var(--white-color);
+}
+
+@media screen and (min-width: 768px) {
 }
