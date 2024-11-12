@@ -24,7 +24,7 @@ const IntroSection = () => {
             <div className={styles.hero_and_image_combo}>
               <Hero text={HERO_CONTENT} />
               <Image
-                src={"/images/chris_1.png"}
+                src={"/images/chris.png"}
                 alt="chris_2"
                 height={623}
                 width={554}
