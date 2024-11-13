@@ -26,7 +26,6 @@
   .content {
     display: flex;
     flex-direction: column;
-
     align-content: center;
     align-items: center;
     padding: var(--padding-m);
@@ -35,6 +34,6 @@
   .image {
     display: block;
     width: 550px;
-    height: 480px;
+    height: 437px;
   }
 }

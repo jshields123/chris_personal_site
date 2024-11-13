@@ -8,7 +8,7 @@ const LinksSection = () => {
     <div className={styles.container}>
       <Image
         className={styles.logo}
-        src="/chris-rect-white.png"
+        src="/images/chris-logo.svg"
         alt="cvd-logo"
         height={90}
         width={326}

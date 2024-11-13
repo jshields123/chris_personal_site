@@ -23,8 +23,8 @@
 }
 
 .image {
-  width: 400px;
-  height: 340px;
+  width: 300px;
+  height: 205px;
 }
 
 @media screen and (min-width: 768px) {
@@ -32,11 +32,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 80px;
+    padding: 40px;
   }
 
   .image {
-    width: 550px;
+    width: 630px;
     height: 480px;
   }
 }
