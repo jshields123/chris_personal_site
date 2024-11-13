@@ -1,5 +1,5 @@
 import { LinksList } from "../LinksList";
-import { ThirdHeading } from "../ThirdHeading";
+import { THIRD_HEADING_TEXT, ThirdHeading } from "../ThirdHeading";
 import styles from "./LinksSection.module.css";
 import Image from "next/image";
 
@@ -14,10 +14,7 @@ const LinksSection = () => {
         width={326}
         loading="lazy"
       />
-      <ThirdHeading
-        className={styles.subheading}
-        text={"Director of CVD Glass | Founder & CEO of CVD Windows and Doors"}
-      />
+      <ThirdHeading className={styles.subheading} />
       <div className={styles.links}>
         <LinksList />
       </div>

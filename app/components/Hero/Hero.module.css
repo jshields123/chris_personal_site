@@ -2,10 +2,9 @@
   color: var(--white-color);
   display: flex;
   flex-direction: column;
-  font-size: 74px;
+  font-size: 68px;
   font-style: italic;
   font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-l);
   max-width: var(--tab-width);
   padding: var(--padding-s);
   text-align: center;

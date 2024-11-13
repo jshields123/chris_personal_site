@@ -7,8 +7,6 @@ import { HERO_CONTENT } from "../Hero/Hero.constants";
 
 import Image from "next/image";
 
-import { THIRD_HEADING_TEXT } from "../ThirdHeading/ThirdHeading.constants";
-
 import styles from "./IntroSection.module.css";
 import { ThirdHeading } from "../ThirdHeading/ThirdHeading";
 
@@ -24,7 +22,7 @@ const IntroSection = () => {
             <div className={styles.hero_and_image_combo}>
               <Hero text={HERO_CONTENT} />
               <Image
-                src={"/images/chris-cvd.svg"}
+                src={"/images/chris_blue_suit.svg"}
                 alt="chris_2"
                 height={623}
                 width={554}
@@ -32,7 +30,7 @@ const IntroSection = () => {
                 loading="lazy"
               />
             </div>
-            <ThirdHeading text={THIRD_HEADING_TEXT} />
+            <ThirdHeading />
           </div>
         </div>
       }

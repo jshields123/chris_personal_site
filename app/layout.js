@@ -6,8 +6,8 @@ import { FOOTER_CONTENT } from "./components/Footer/Footer.constants";
 import { LinksSection } from "./components/LinksSection";
 
 export const metadata = {
-  title: "Chris Van Dijk",
-  description: "Personal website of Chris Van Dijk",
+  title: "Chris van Dijk",
+  description: "Personal website of Chris van Dijk",
 };
 
 const bebasNeue = Bebas_Neue({
@@ -26,6 +26,9 @@ const roboto = Roboto({
 export default function RootLayout({ children }) {
   return (
     <html className={styles.html} lang="en">
+      <head>
+        <link rel="icon" href="/images/chris-logo.svg" type="image/svg+xml" />
+      </head>
       <body className={bebasNeue.className}>
         {children}
         <LinksSection />

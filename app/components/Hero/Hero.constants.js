@@ -1,1 +1,1 @@
-export const HERO_CONTENT = "Chris Van Dijk";
+export const HERO_CONTENT = "Chris van Dijk";

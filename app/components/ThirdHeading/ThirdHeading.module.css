@@ -1,13 +1,26 @@
-.third_heading {
+.third_heading_desktop,
+.third_heading_mobile {
   color: var(--white-color);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-m);
   font-weight: var(--font-weight-medium);
   padding: var(--padding-s);
   text-align: center;
 }
 
+.third_heading_desktop {
+  display: none;
+}
+
+.third_heading_mobile {
+  display: block;
+  white-space: pre-wrap;
+}
 @media screen and (min-width: 768px) {
-  .third_heading {
+  .third_heading_desktop {
+    display: block;
     font-size: var(--font-size-xxl);
+  }
+  .third_heading_mobile {
+    display: none;
   }
 }
