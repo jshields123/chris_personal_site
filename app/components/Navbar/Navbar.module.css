@@ -10,6 +10,7 @@
   height: 56px;
   width: 200px;
   padding-left: var(--padding-s);
+  padding-right: 5px;
 }
 
 .hamburger {

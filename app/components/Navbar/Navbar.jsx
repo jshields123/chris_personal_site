@@ -21,8 +21,8 @@ const Navbar = () => {
               alt={"cvd-logo"}
               height={90}
               width={326}
-              priority
               className={styles.logo}
+              loading={"lazy"}
             />
           </Link>
         </div>

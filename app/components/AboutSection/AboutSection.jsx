@@ -30,6 +30,7 @@ const AboutSection = () => {
           height={260}
           width={350}
           className={styles.image}
+          loading="lazy"
         />
         <Paragraph text={PARAGRAPH_CONTENT} />
         <br />

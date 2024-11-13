@@ -15,9 +15,9 @@ import { ThirdHeading } from "../ThirdHeading/ThirdHeading";
 const IntroSection = () => {
   return (
     <ImageOverlay
-      shouldHavePriority={true}
       imageSrc="/images/skyline.jpg"
       alt="city skyline"
+      loading="lazy"
       children={
         <div className={styles.container}>
           <div className={styles.content}>
@@ -29,6 +29,7 @@ const IntroSection = () => {
                 height={623}
                 width={554}
                 className={styles.hero_image}
+                loading="lazy"
               />
             </div>
             <ThirdHeading text={THIRD_HEADING_TEXT} />

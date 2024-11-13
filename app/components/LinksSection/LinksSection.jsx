@@ -12,6 +12,7 @@ const LinksSection = () => {
         alt="cvd-logo"
         height={90}
         width={326}
+        loading="lazy"
       />
       <ThirdHeading
         className={styles.subheading}
