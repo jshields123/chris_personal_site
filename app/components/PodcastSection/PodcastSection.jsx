@@ -6,7 +6,7 @@ import { PodcastVideo } from "../PodcastVideo";
 
 const PodcastSection = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="podcast">
       <SubHeading text={"Listen to Elevate Your Game Podcast Here"} />
       <div className={styles.content}>
         <Paragraph

@@ -24,7 +24,9 @@ const LinksList = () => {
         </ul>
       </div>
       <div className={styles.socials}>
-        <h3 className={styles.title}>Socials</h3>
+        <h3 id="socials" className={styles.title}>
+          Socials
+        </h3>
         <ul className={styles.social_list}>
           {SOCIAL_LINKS.map(({ id, linkHref, name }) => {
             return (
