@@ -28,8 +28,25 @@
 }
 
 .link {
+  position: relative;
   text-decoration: none;
   color: var(--white-color);
+  padding-bottom: 4px;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--white-color);
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {

@@ -10,8 +10,9 @@
 }
 
 .hero_image {
-  height: 320px;
-  width: 300px;
+  height: 500px;
+  width: auto;
+  max-width: 100%;
 }
 
 .hero_and_image_combo {
@@ -20,15 +21,28 @@
   align-items: center;
 }
 
+@media screen and (max-width: 375px) {
+  .hero_image {
+    height: 350px;
+    width: auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero_image {
-    height: 616px;
-    width: 554px;
+    height: 420px;
+    width: auto;
   }
 
   .hero_and_image_combo {
-    display: flex;
     flex-direction: row;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero_image {
+    height: 650px;
+    width: auto;
   }
 }

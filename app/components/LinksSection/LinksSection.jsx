@@ -7,12 +7,12 @@ const LinksSection = () => {
   return (
     <div className={styles.container}>
       <Image
-        className={styles.logo}
-        src="/images/chris-logo.svg"
-        alt="cvd-logo"
-        height={90}
+        src={"/images/lion_cvd_logo.svg"}
+        alt={"cvd-logo"}
+        height={78}
         width={326}
-        loading="lazy"
+        className={styles.logo}
+        loading={"lazy"}
       />
       <ThirdHeading className={styles.subheading} />
       <div className={styles.links}>

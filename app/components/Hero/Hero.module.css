@@ -6,7 +6,6 @@
   font-style: italic;
   font-weight: var(--font-weight-bold);
   max-width: var(--tab-width);
-  padding: var(--padding-s);
   text-align: center;
 }
 

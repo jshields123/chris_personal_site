@@ -27,7 +27,11 @@ export default function RootLayout({ children }) {
   return (
     <html className={styles.html} lang="en">
       <head>
-        <link rel="icon" href="/images/chris-logo.svg" type="image/svg+xml" />
+        <link
+          rel="icon"
+          href="/images/lion_cvd_logo.svg"
+          type="image/svg+xml"
+        />
       </head>
       <body className={bebasNeue.className}>
         {children}

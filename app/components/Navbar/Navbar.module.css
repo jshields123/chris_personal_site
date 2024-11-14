@@ -3,14 +3,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: var(--padding-s);
 }
 
 .logo {
-  height: 56px;
+  height: 64px;
   width: 200px;
-  padding-left: var(--padding-s);
-  padding-right: 5px;
 }
 
 .hamburger {

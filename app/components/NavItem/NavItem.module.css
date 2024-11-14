@@ -1,5 +1,22 @@
 .text {
+  position: relative;
   color: var(--white-color);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-l);
   text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--white-color);
+  transition: width 0.3s ease;
+}
+
+.text:hover::after {
+  width: 100%;
 }
