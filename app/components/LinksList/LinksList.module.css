@@ -49,11 +49,19 @@
   width: 100%;
 }
 
+.social_list {
+  display: flex;
+  flex-direction: row;
+  gap: var(--padding-m);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
     gap: var(--padding-s);
     margin: 0;

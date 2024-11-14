@@ -9,5 +9,6 @@
   .paragraph {
     font-size: var(--font-size-xl);
     flex-direction: row;
+    padding: var(--padding-xxl);
   }
 }
