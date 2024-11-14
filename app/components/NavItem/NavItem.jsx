@@ -3,7 +3,6 @@ import Link from "next/link";
 const NavItem = ({ item }) => {
   const { text, linkHref, id } = item;
 
-  // Check if the link is a mailto link
   if (linkHref.startsWith("mailto:")) {
     return (
       <li>
@@ -19,7 +18,6 @@ const NavItem = ({ item }) => {
     );
   }
 
-  // Check if it's a scroll link (e.g., #about)
   if (linkHref.startsWith("#")) {
     return (
       <li>
@@ -30,7 +28,6 @@ const NavItem = ({ item }) => {
     );
   }
 
-  // For internal Next.js links
   return (
     <li>
       <Link className={styles.text} href={linkHref}>
