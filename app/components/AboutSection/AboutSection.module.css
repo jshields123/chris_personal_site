@@ -22,6 +22,14 @@
   height: 350px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: var(--padding-m);
+}
+
 @media screen and (min-width: 768px) {
   .content {
     display: flex;
