@@ -19,7 +19,7 @@ const WhoIsSection = () => {
       <WhoIs text={WHOIS_CONTENT} />
       <div className={styles.content}>
         <Image
-          src={"/images/chris_award 1.svg"}
+          src={"/images/chris_award_2.svg"}
           alt="chris_2"
           height={260}
           width={350}

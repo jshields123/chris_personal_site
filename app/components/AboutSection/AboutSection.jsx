@@ -25,7 +25,7 @@ const AboutSection = () => {
       <WhoIs text={WHOIS_CONTENT} />
       <div className={styles.content}>
         <Image
-          src={"/images/chris-200.svg"}
+          src={"/images/chris_speech_1.svg"}
           alt="chris_2"
           height={260}
           width={350}
