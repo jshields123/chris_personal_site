@@ -25,6 +25,7 @@ const WhoIsSection = () => {
           width={350}
           className={styles.image}
           loading="lazy"
+          quality={100}
         />
         <Paragraph text={PARAGRAPH_CONTENT} />
       </div>

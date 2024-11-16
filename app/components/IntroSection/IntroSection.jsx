@@ -28,6 +28,7 @@ const IntroSection = () => {
                 width={554}
                 className={styles.hero_image}
                 loading="lazy"
+                quality={100}
               />
             </div>
             <ThirdHeading />

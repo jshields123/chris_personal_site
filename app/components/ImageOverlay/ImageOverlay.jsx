@@ -11,6 +11,7 @@ const ImageOverlay = ({ children, imageSrc, alt }) => {
         className={`${styles.intro__image}`}
         loading="lazy"
         fill
+        quality={100}
       />
       <div className={styles.overlay}>{children}</div>
     </div>

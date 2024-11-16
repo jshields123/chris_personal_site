@@ -23,6 +23,7 @@ const Navbar = () => {
               width={326}
               className={styles.logo}
               loading={"lazy"}
+              quality={100}
             />
           </Link>
         </div>

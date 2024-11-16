@@ -13,6 +13,7 @@ const LinksSection = () => {
         width={326}
         className={styles.logo}
         loading={"lazy"}
+        quality={100}
       />
       <ThirdHeading className={styles.subheading} />
       <div className={styles.links}>
