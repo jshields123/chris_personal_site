@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import { Footer } from "./components/Footer";
 import { FOOTER_CONTENT } from "./components/Footer/Footer.constants";
 import { LinksSection } from "./components/LinksSection";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Chris van Dijk",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={bebasNeue.className}>
         {children}
+        <Analytics />
         <LinksSection />
         <Footer link={FOOTER_CONTENT.linkHref} text={FOOTER_CONTENT.text} />
       </body>
