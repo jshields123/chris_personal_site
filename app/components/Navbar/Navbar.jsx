@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className={styles.logo}>
           <Link href="/">
             <Image
-              src={"/images/lion_cvd_logo.svg"}
+              src={"/images/new_logo.svg"}
               alt={"cvd-logo"}
               height={78}
               width={326}

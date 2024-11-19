@@ -7,7 +7,7 @@ const LinksSection = () => {
   return (
     <div className={styles.container}>
       <Image
-        src={"/images/lion_cvd_logo.svg"}
+        src={"/images/new_logo.svg"}
         alt={"cvd-logo"}
         height={78}
         width={326}
